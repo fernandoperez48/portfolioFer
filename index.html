@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>FP Desarrollo WEb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Seccion inicio-->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/FP/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+              </ul>
+            </nav>
+
+            <!-- Iconos del menu responsive-->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Iconos de las redes sociales-->
+            <div class="redes">
+              <a href="https://www.linkedin.com/in/fernando-perez-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/fernandoperez48" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Fernando Perez</span>, Desarrollador Web</h2>
+          <p class="descripcion">
+            Ayudo a diseñadores, pequeñas agencias y empresas a dar vida a sus ideas. Con tecnología modernas, convierto sus requisitos en sitios web compatibles con CMS y comercio electrónico, a tiempo y dentro del presupuesto.
+
+¿Tienes alguna pregunta? Contáctame.
+          </p>
+          <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion sobre mi-->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/ImagenFer.jpeg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre mi</p>
+        <h2>Hola, soy <span>Fernando Perez</span></h2>
+        <h3>Desarrollador Web</h3>
+        <p>
+          -Soy estudiante de la carrera de Analista de Sistemas, cursando el
+          ultimo año. Mi especializacion es el desarrollo web. <br><br>
+          -Soy apasionado
+          de la tecnologia y me gusta brindar soluciones a los problemas
+          complejos.<br><br>
+        </p>
+        <p>
+          -Valoro mucho la coherencia de los proyectos y las personas. Creo que
+          es un factor fundamental para que todo funcione con fluidez y para que
+          haya proyectos que realmente aportan. <br><br>
+        </p>
+        <p>
+          -Me gustan las matematicas. Me
+          ayuda a concentrarme en lo importante haciendo que las soluciones sean
+          lo mas sencillas. <br><br>
+        </p>
+        <a href="https://drive.google.com/file/d/1DhoYGvnWGptkXShmICt9ZuLsLaODw6E2/view?usp=sharing" target="_blank">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- Seccion servicios-->
+    <section id="servicios">
+      <h3 class="titulo-seccion">Mis Servicios</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>PROGRAMADOR WEB</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Web</li>
+            <li>Graphics</li>
+            <li>SEO</li>
+            <p>
+              Diagramación profesional de Sitios Web. Programación HTML,  CSS, Javascript, .NET, PHP. Bases de Datos...
+            </p>
+          </ul>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>DISEÑO WEB Y MOVIL</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Web</li>
+            <li>Graphics</li>
+            <li>SEO</li>
+            <p>
+              Con la última tecnología y responsive design que se adaptan a todas las plataformas, logramos una Sitio Web multiplataforma...
+            </p>
+          </ul>
+        </div>
+       
+      </div>
+      
+    </section>
+
+    <!-- Seccion Habilidades-->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Html & Css</p>
+          <span class="porcentaje">95%</span>
+        </div>
+        <div class="barra">
+          <div id="html" class="barra-progreso1"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Javascript</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class="barra-progreso2"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Base de Datos</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="bd" class="barra-progreso3"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>C#</p>
+          <span class="porcentaje">85%</span>
+        </div>
+        <div class="barra">
+          <div id="cs" class="barra-progreso4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seccion Portafolio-->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay">
+            <img src="/img/aplleMart.png" alt="" />
+            <div class="info">
+              <h4>Diseño Web</h4>
+              
+              <a href="https://emartiphone.vercel.app/" target="_blank"><p>Apple Mart</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay">
+            
+            <img src="/img/landingPage.png" alt="" />
+            <div class="info">
+              <h4>Diseño Web</h4>
+              <a href="https://landingpagefer.netlify.app/" target="_blank"><p>LandingPage</p></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Seccion Contacto-->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactame ahora</h3>
+      <div class="contenedor-form">
+        <form action="https://formsubmit.co/0e2abe8b1b4d6aa09ea706e303860e15" method="POST">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo"
+              class="input-mitad"
+              name="name"
+            />
+            <input
+              type="text"
+              placeholder="Direccion de Email"
+              class="input-mitad"
+              name="email"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input.full" 
+            name="subject"
+            />
+          </div>
+          <div class="fila">
+            <textarea
+              name="comments"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            <input type="hidden" name="_next" value="http://localhost:5500">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+     
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+     <p>Todos los derechos reservados - 2023</p>
+     <div class="redes">
+      <a href="https://www.linkedin.com/in/fernando-perez-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/fernandoperez48" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+     </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
